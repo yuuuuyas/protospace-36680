@@ -6,5 +6,5 @@ class Prototype < ApplicationRecord
   validates :concept, presence: true
   validates :image, presence: true
 
-  has_many :comments
+  has_many :comments, dependent: :destroy
 end
